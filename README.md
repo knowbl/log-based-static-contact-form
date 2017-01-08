@@ -70,3 +70,12 @@ tail /path/to/log/access.log
 - [ ] Apache config
 - [ ] Add option in step four to open socket for direct access
 - [ ]
+
+## Feedback/Contributing
+
+## Donate
+
+If this is useful to you, please donate to the EFF. I don't work there,
+but they do fantastic work in the industry
+
+[https://eff.org/donate/](https://eff.org/donate/)
