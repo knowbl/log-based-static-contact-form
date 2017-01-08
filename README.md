@@ -12,6 +12,8 @@ Within the http block of your nginx server, insert the log format for your speci
 log_format contactstatic '$time_local | $request';
 ```
 
+See `nginx-exmaple.conf` placement location.
+
 ### Step two
 
 In the server block of your nginx server, insert the location of your action within the form.
