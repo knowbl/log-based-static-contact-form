@@ -1,7 +1,7 @@
 # Log based static contact form
 ---
 
-This is a tiny contact form for static sites.
+This is a light weight contact form for self hosted static sites.
 
 ## Prerequisites
 
