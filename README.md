@@ -33,3 +33,9 @@ location ~* /submit/(.*)$ {
 	return https://example.com/;
 }
 ```
+
+## TODO
+
+- [ ] Apache config
+- [ ] Add option in step four to open socket for direct access
+- [ ]
