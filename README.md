@@ -55,6 +55,16 @@ Add the form on your site. Style as needed.
 ```
 GET is required, as we'll need that whilst parsing logs
 
+### Step four
+
+There are several ways of monitoring your incoming form posts.
+
+#### Tailing log files directly
+
+```bash
+tail /path/to/log/access.log
+```
+
 ## TODO
 
 - [ ] Apache config
