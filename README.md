@@ -34,6 +34,27 @@ location ~* /submit/(.*)$ {
 }
 ```
 
+### Step three
+
+Add the form on your site. Style as needed.
+
+```html
+<form action="/submit/" method="GET">
+
+	<label for="name">Name:</label>
+	<input type="text" name="name" required="yes" placeholder="What can I call you?">
+
+	<label for="email">Email:</label>
+	<input type="email" name="email" required="yes" placeholder="your@email.com">
+
+	<label for="message">Short message:</label>
+	<textarea type="message" name="message" required="yes" placeholder="What do you want to say (in 140 characters)?" maxlength="140"></textarea>
+
+	<input type="submit" value="Send a message">
+</form>
+```
+GET is required, as we'll need that whilst parsing logs
+
 ## TODO
 
 - [ ] Apache config
