@@ -5,5 +5,18 @@
 		<title>Log based static contact form</title>
 	</head>
 	<body>
+		<form action="/submit/" method="GET">
+
+			<label for="name">Name:</label>
+			<input type="text" name="name" required="yes" placeholder="What can I call you?">
+
+			<label for="email">Email:</label>
+			<input type="email" name="email" required="yes" placeholder="your@email.com">
+
+			<label for="message">Short message:</label>
+			<textarea type="message" name="message" required="yes" placeholder="What do you want to say (in 140 characters)?" maxlength="140"></textarea>
+
+			<input type="submit" value="Send a message">
+		</form>
 	</body>
 </html>
