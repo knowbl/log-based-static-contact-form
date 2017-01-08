@@ -2,6 +2,12 @@
 ---
 
 This is a tiny contact form for static sites.
+
+## Prerequisites
+
+- NGINX (Apache coming soon).
+- Read/write access to the server.
+
 ## How to use
 
 ### Step one
