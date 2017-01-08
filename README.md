@@ -15,7 +15,7 @@ This is a light weight contact form for self hosted static sites.
 
 ## Installation
 
-### Step one
+### Step one: Log format
 
 Within the http block of your nginx server, insert the log format for your specific configuration. Less is recommended.
 
@@ -25,7 +25,7 @@ log_format contactstatic '$time_local | $request';
 
 See `nginx-exmaple.conf` placement location.
 
-### Step two
+### Step two: Capture request
 
 In the server block of your nginx server, insert the location of your action within the form.
 
@@ -39,7 +39,7 @@ location ~* /submit/(.*)$ {
 }
 ```
 
-### Step three
+### Step three: Form
 
 Add the form on your site. Style as needed.
 
@@ -60,7 +60,7 @@ Add the form on your site. Style as needed.
 ```
 GET is required, as we'll need that whilst parsing logs
 
-### Step four
+### Step four: Monitoring
 
 There are several ways of monitoring your incoming form posts.
 
