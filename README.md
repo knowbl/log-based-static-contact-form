@@ -8,6 +8,11 @@ This is a light weight contact form for self hosted static sites.
 - NGINX (Apache coming soon).
 - Read/write access to the server.
 
+## Caveats
+
+- Will not work with hosted solutions, like Github Pages.
+- Target directory (`/submit/` in this example) must be an empty folder.
+
 ## Installation
 
 ### Step one
