@@ -115,7 +115,11 @@ Add to the bottom of the crontab
 ```
 This cron is set for every hour, on the hour, 9am through to 5pm, Monday through to Friday. Feel free to set to something more applicable to your own setup.
 
+#### 3) Be creative
 
+- Parse the log file every day and send an automated reply email, if not replied to.
+- Create a chat bot that logs each input for later analysis.
+- Keep a list of reoccurring IP addresses, or email addresses for your own blacklist.
 
 ## TODO
 
