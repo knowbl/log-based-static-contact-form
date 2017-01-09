@@ -78,6 +78,14 @@ tail /path/to/log/access.log
 
 ## Feedback/Contributing
 
+Any direct feedback can be given on the HackerNews post, here
+
+[https://news.ycombinator.com/item?id=](https://news.ycombinator.com/item?id=)
+
+Or raise an issue
+
+[https://github.com/knowblcluster/log-based-static-contact-form/issues](https://github.com/knowblcluster/log-based-static-contact-form/issues)
+
 ## Donate
 
 If this is useful to you, please donate to the EFF. I don't work there,
