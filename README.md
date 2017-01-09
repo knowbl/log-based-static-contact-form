@@ -18,7 +18,7 @@ This is a light weight contact form for self hosted static sites.
 
 ### Step one: Log format
 
-Within the http block of your nginx server, insert the log format for your specific configuration near the bottom of the block. Less is recommended.
+Within the http block of your nginx server, insert the log format for your specific configuration near the bottom of the block, but before the first server blocks. Less is recommended.
 
 ```nginx
 log_format contactstatic '$time_local | $request';
