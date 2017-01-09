@@ -72,6 +72,12 @@ GET as the method is required, as it is need for parsing within the logs.
 There are several ways of monitoring your incoming form posts.
 
 #### Tailing log files directly
+Direct view of the live log file.
+
+```bash
+tail -f /home/example/logs/access.log
+```
+
 
 ```bash
 tail /path/to/log/access.log
