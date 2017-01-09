@@ -43,7 +43,7 @@ This will return the visitor to the root directory. Tailor to your specific need
 
 See `nginx-exmaple.conf` placement location.
 
-### Step three: Form
+### Step three: HTML Form
 
 Add the form on your site. Style as needed.
 
