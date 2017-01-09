@@ -12,6 +12,7 @@ This is a light weight contact form for self hosted static sites.
 
 - Will not work with hosted solutions, like Github Pages.
 - Target directory (`/submit/` in this example) must be an empty folder.
+- One potential limitation will be charater limit. [See here for more information](http://stackoverflow.com/questions/2659952/maximum-length-of-http-get-request)
 
 ## Installation
 
