@@ -32,8 +32,8 @@ In the server block of your nginx server, insert the location of your action wit
 ```nginx
 location ~* /submit/(.*)$ {
 
-	access_log /var/logs/static-contact-access.log contactstatic;
-	error_log /var/logs/static-contact-error.log;
+	access_log /home/example/logs/static-contact-access.log contactstatic;
+	error_log /home/example/logs/static-contact-error.log;
 
 	return https://example.com/;
 }
