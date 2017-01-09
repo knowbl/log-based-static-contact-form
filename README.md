@@ -140,7 +140,7 @@ This cron is set for every hour, on the hour, 9am through to 5pm, Monday through
 
 Any direct feedback can be given on the HackerNews post, here
 
-[https://news.ycombinator.com/item?id=](https://news.ycombinator.com/item?id=)
+[https://news.ycombinator.com/item?id=13358753](https://news.ycombinator.com/item?id=13358753)
 
 Or raise an issue
 
