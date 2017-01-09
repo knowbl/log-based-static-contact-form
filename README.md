@@ -7,6 +7,7 @@ This is a light weight contact form for self hosted static sites.
 
 - NGINX (Apache coming soon).
 - Read/write access to the server.
+- `mail` for Debian/Ubuntu.
 
 ## Caveats
 
