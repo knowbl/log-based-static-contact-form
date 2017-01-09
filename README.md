@@ -71,17 +71,50 @@ GET as the method is required, as it is need for parsing within the logs.
 
 There are several ways of monitoring your incoming form posts.
 
-#### Tailing log files directly
+#### 1) Tailing log files directly
+
 Direct view of the live log file.
 
 ```bash
 tail -f /home/example/logs/access.log
 ```
 
+#### 2) Cron job
+
+Send requests to an email address.
 
 ```bash
-tail /path/to/log/access.log
+cd /home/example/
+nano log-based-static-contact-form-emailer.sh
 ```
+
+```bash
+#!/bin/bash
+
+if [ ! -f /home/example/logs/static-contact-access.log ];
+then
+	echo "File not found!"
+else
+	mail -s "Contact form" hello@example.com < /home/example/logs/static-contact-access.log;
+	logrotate -f /home/example/logs/static-contact-access.log;
+fi
+```
+>	Note: Depending on who fills out your form (bad guys?), you might want to send an alert that there's new contact form information, rather than sending the whole log in the body of an email.
+
+```bash
+chmod +x log-based-static-contact-form-emailer.sh
+```
+
+```bash
+crontab -e
+```
+Add to the bottom of the crontab
+
+```cron
+0 9-17 * * 1-5 /var/log/log-based-form.sh
+```
+This cron is set for every hour, on the hour, 9am through to 5pm, Monday through to Friday. Feel free to set to something more applicable to your own setup.
+
 
 
 ## TODO
