@@ -12,7 +12,7 @@ This is a light weight contact form for self hosted static sites.
 
 - Will not work with hosted solutions, like Github Pages.
 - Target directory (`/submit/` in this example) must be an empty folder.
-- One potential limitation will be charater limit. [See here for more information](http://stackoverflow.com/questions/2659952/maximum-length-of-http-get-request)
+- One potential limitation can be charater limit. [See here for more information](http://stackoverflow.com/questions/2659952/maximum-length-of-http-get-request)
 
 ## Installation
 
@@ -61,6 +61,8 @@ Add the form on your site. Style as needed.
 	<input type="submit" value="Send a message">
 </form>
 ```
+
+
 GET is required, as we'll need that whilst parsing logs
 
 ### Step four: Monitoring
@@ -72,6 +74,23 @@ There are several ways of monitoring your incoming form posts.
 ```bash
 tail /path/to/log/access.log
 ```
+
+#### Cron job
+
+Change `/path/to/log/access.log` to your log file location.
+
+```bash
+#!/bin/bash
+
+if [ ! -f /path/to/log/access.log ]; then
+    echo "File not found!"
+fi
+```
+
+```cron
+0 9-17 * * 1-5 /var/log/log-based-form.sh
+```
+This cron is set for every hour, on the hour, 9am through to 5pm, Monday through to Friday. Feel free to set to something more applicable to your own setup.
 
 ## TODO
 
