@@ -63,9 +63,9 @@ Add the form on your site. Style as needed.
 	<input type="submit" value="Send a message">
 </form>
 ```
+Add as many `<input>` as needed.
 
-
-GET is required, as we'll need that whilst parsing logs
+GET as the method is required, as it is need for parsing within the logs.
 
 ### Step four: Monitoring
 
