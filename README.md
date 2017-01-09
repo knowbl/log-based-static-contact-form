@@ -75,22 +75,6 @@ There are several ways of monitoring your incoming form posts.
 tail /path/to/log/access.log
 ```
 
-#### Cron job
-
-Change `/path/to/log/access.log` to your log file location.
-
-```bash
-#!/bin/bash
-
-if [ ! -f /path/to/log/access.log ]; then
-    echo "File not found!"
-fi
-```
-
-```cron
-0 9-17 * * 1-5 /var/log/log-based-form.sh
-```
-This cron is set for every hour, on the hour, 9am through to 5pm, Monday through to Friday. Feel free to set to something more applicable to your own setup.
 
 ## TODO
 
