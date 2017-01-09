@@ -39,6 +39,8 @@ location ~* /submit/(.*)$ {
 }
 ```
 
+See `nginx-exmaple.conf` placement location.
+
 ### Step three: Form
 
 Add the form on your site. Style as needed.
