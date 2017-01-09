@@ -76,7 +76,7 @@ tail /path/to/log/access.log
 
 - [ ] Apache config
 - [ ] Add option in step four to open socket for direct access
-- [ ]
+- [ ] Form validation (client side)
 
 ## Feedback/Contributing
 
