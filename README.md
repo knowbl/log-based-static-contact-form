@@ -39,6 +39,7 @@ location ~* /submit/(.*)$ {
 	return https://example.com/;
 }
 ```
+This will return the visitor to the root directory. Tailor to your specific needs.
 
 See `nginx-exmaple.conf` placement location.
 
