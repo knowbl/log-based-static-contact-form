@@ -28,7 +28,7 @@ See `nginx-exmaple.conf` placement location.
 
 ### Step two: Capture request
 
-In the server block of your nginx server, insert the location of your action within the form.
+In the server block of your nginx server, insert the location of your action (`/submit/` in this instance) within the form.
 
 ```nginx
 location ~* /submit/(.*)$ {
