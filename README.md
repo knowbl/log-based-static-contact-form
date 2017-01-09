@@ -91,12 +91,21 @@ nano log-based-static-contact-form-emailer.sh
 ```bash
 #!/bin/bash
 
-if [ ! -f /home/example/logs/static-contact-access.log ];
+EMAIL="hello@example.com"
+EMAILSUBJECT="Contact form"
+LOG="/home/example/logs/static-contact-access.log"
+CRON="/home/example/logs/example-cron.log"
+
+### DO NOT EDIT BELOW ###
+
+NOW=$(date +"Form sent to $EMAIL -- %Y-%m-%d %H:%M:%S --");
+
+if [ ! -f $LOG ];
 then
-	echo "File not found!"
+	printf "." >> $CRON
 else
-	mail -s "Contact form" hello@example.com < /home/example/logs/static-contact-access.log;
-	logrotate -f /home/example/logs/static-contact-access.log;
+	mail -s "$EMAILSUBJECT" $EMAIL < $LOG;
+	printf "\n \n $NOW \n \n" >> $CRON
 fi
 ```
 >	Note: Depending on who fills out your form (bad guys?), you might want to send an alert that there's new contact form information, rather than sending the whole log in the body of an email.
