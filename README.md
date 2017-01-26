@@ -7,12 +7,13 @@ This is a light weight contact form for self hosted static sites.
 
 - NGINX (Apache coming soon).
 - Read/write access to the server.
-- `mail` for Debian/Ubuntu.
+- (optional) `mail` for Debian/Ubuntu.
 
 ## Caveats
 
-- Will not work with hosted solutions, like Github Pages.
-- Target directory (`/submit/` in this example) must be an empty folder.
+- Does *not* work with hosted solutions, like Github Pages.
+- Does *not* support file uploads (without javascript intergration with something like Dropbox, or Mega)
+- Target directory (`/submit/` in this example) must be an empty folder, or all legitamate queries to /submit/ will be redirected.
 - One potential limitation can be charater limit. [See here for more information](http://stackoverflow.com/questions/2659952/maximum-length-of-http-get-request)
 
 ## Installation
