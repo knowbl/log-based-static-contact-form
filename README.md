@@ -136,6 +136,7 @@ This cron is set for every hour, on the hour, 9am through to 5pm, Monday through
 - [ ] Apache config
 - [ ] Add option in step four to open socket for direct access
 - [ ] Form validation (client side)
+- [ ] CSRF validation
 
 ## Feedback/Contributing
 
