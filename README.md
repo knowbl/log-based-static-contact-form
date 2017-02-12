@@ -1,5 +1,4 @@
 # Log based static contact form
----
 
 This is a light weight contact form for self hosted static sites.
 
