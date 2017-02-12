@@ -145,7 +145,7 @@ Any direct feedback can be given on the HackerNews post, here
 
 Or raise an issue
 
-[https://github.com/knowblcluster/log-based-static-contact-form/issues](https://github.com/knowblcluster/log-based-static-contact-form/issues)
+[https://github.com/knowbl/log-based-static-contact-form/issues](https://github.com/knowbl/log-based-static-contact-form/issues)
 
 ## Donate
 
