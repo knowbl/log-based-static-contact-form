@@ -2,6 +2,10 @@
 
 This is a light weight contact form for self hosted static sites.
 
+## Canonical source
+
+The canonical source of Knowbl Cluster is [hosted on https://git.knowbl.co/dev/log-based-contact-form/](https://git.knowbl.co/dev/log-based-contact-form/).
+
 ## Prerequisites
 
 - NGINX (Apache coming soon).
