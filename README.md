@@ -143,9 +143,9 @@ This cron is set for every hour, on the hour, 9am through to 5pm, Monday through
 
 ## Feedback/Contributing
 
-Any direct feedback can be given on the HackerNews post, here
+<strike>Any direct feedback can be given on the HackerNews post, here
 
-[https://news.ycombinator.com/item?id=13358753](https://news.ycombinator.com/item?id=13358753)
+[https://news.ycombinator.com/item?id=13358753](https://news.ycombinator.com/item?id=13358753)</strike>
 
 Or raise an issue
 
