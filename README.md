@@ -1,6 +1,6 @@
 # Log based static contact form
 
-This is a light weight contact form for self hosted static sites.
+This is a proof of concept light weight contact form for self hosted static sites.
 
 ## Canonical source
 
