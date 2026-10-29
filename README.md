@@ -15,21 +15,21 @@ The canonical source of Knowbl Cluster is hosted on [https://git.knowbl.co/dev/l
 ## Caveats
 
 - Does *not* work with hosted solutions, like Github Pages.
-- Does *not* support file uploads (without javascript intergration with something like Dropbox, or Mega)
-- Target directory (`/submit/` in this example) must be an empty folder, or all legitamate queries to /submit/ will be redirected.
-- One potential limitation can be charater limit. [See here for more information](http://stackoverflow.com/questions/2659952/maximum-length-of-http-get-request)
+- Does *not* support file uploads (without JavaScript integration with something like Dropbox, or Mega)
+- Target directory (`/submit/` in this example) must be an empty folder, or all legitimate queries to /submit/ will be redirected.
+- One potential limitation can be character limit. [See here for more information](http://stackoverflow.com/questions/2659952/maximum-length-of-http-get-request)
 
 ## Installation
 
 ### Step one: Log format
 
-Within the http block of your nginx server, insert the log format for your specific configuration near the bottom of the block, but before the first server blocks. Less is recommended.
+Within the http block of your NGINX server, insert the log format for your specific configuration near the bottom of the block, but before the first server blocks. Less is recommended.
 
 ```nginx
 log_format contactstatic '$time_local | $request';
 ```
 
-See `nginx-exmaple.conf` placement location.
+See `nginx-example.conf` placement location.
 
 ### Step two: Capture request
 
@@ -46,7 +46,7 @@ location ~* /submit/(.*)$ {
 ```
 This will return the visitor to the root directory. Tailor to your specific needs.
 
-See `nginx-exmaple.conf` placement location.
+See `nginx-example.conf` placement location.
 
 ### Step three: HTML Form
 
@@ -69,7 +69,7 @@ Add the form on your site. Style as needed.
 ```
 Add as many `<input>` as needed.
 
-GET as the method is required, as it is need for parsing within the logs.
+GET as the method is required, as it is needed for parsing within the logs.
 
 ### Step four: Monitoring
 
